@@ -40,11 +40,26 @@ html, body {
     line-height: 26px;
 }
 
+.emag-cover {
+    position: relative;
+}
 .emag-cover video {
     width: 100%
 }
 .emag-cover img {
     width: 100%;
+}
+#cover-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+}
+#cover-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
 }
 
 .emag-title {
@@ -93,9 +108,13 @@ html, body {
     border: solid 8px white;
 }
 
+#img-4 {
+    width: 100%;
+}
+
 #img-5 {
     display: block;
-    margin: -300px auto 0;
+    margin: -260px auto 0;
     max-width: 80vw;
 }
 
@@ -111,4 +130,15 @@ html, body {
 }
 #img-6 {
     width: 100%;
+}
+
+#img-7, #img-8 {
+    width: 100%;
+}
+
+#img-8 {
+    display: block;
+    margin: -360px auto 0;
+    max-width: 90vw;
+    min-width: 980px;
 }
