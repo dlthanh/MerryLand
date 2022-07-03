@@ -40,14 +40,25 @@ html, body {
     line-height: 26px;
 }
 
+.emag-wrapper {
+    overflow: hidden;
+}
+
 .emag-cover {
     position: relative;
+    overflow: hidden;
 }
 .emag-cover video {
     width: 100%
 }
 .emag-cover img {
     width: 100%;
+}
+#cover-cloud {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 #cover-1 {
     position: absolute;
@@ -61,13 +72,59 @@ html, body {
     right: 0;
     width: 30%;
 }
+#cover-3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+}
+#cover-4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+}
+
+.emag-cover-bottom img {
+    width: 100%;
+}
 
 .emag-title {
     margin-top: 60px;
     margin-bottom: 30px;
+    position: relative;
 }
-.emag-title img {
+.emag-title img,
+.emag-fullwidth img {
     width: 100%;
+}
+#title-flower {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    animation: pulse 5s infinite;
+}
+#title-bird-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    animation: pulse 3s infinite;
+}
+#title-bird-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    animation: pulse 3s infinite;
+}
+#title-bird-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    animation: pulse 3s infinite;
 }
 
 .emag-sapo {
@@ -82,6 +139,7 @@ html, body {
 .emag-img-group {
     position: relative;
     margin-bottom: 60px;
+    padding: 60px 0;
 }
 .emag-img-group img:not(#frame-1) {
     position: absolute;
@@ -94,39 +152,72 @@ html, body {
     top: 50%;
     transform: translate(0, -50%);
     width: 46.5%;
+    z-index: 1;
+    border-radius: 40px;
 }
 #img-2 {
     right: 0;
-    top: 0;
+    top: 60px;
     width: 52.45%;
+    z-index: 1;
+    border-radius: 40px;
 }
 #img-3 {
-    bottom: 0;
+    bottom: 60px;
     right: 20px;
     width: 60%;
     border-radius: 60px;
     border: solid 8px white;
+    z-index: 1;
+}
+#frame-1-1,
+#frame-1-2 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+#title-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: shake 40s infinite;
 }
 
 #img-4 {
     width: 100%;
+    z-index: 1;
+    position: relative;
 }
-
 #img-5 {
     display: block;
     margin: -260px auto 0;
     max-width: 80vw;
+    z-index: 1;
+    position: relative;
+}
+#frame-add {
+    position: relative;
+}
+#frame-add-bg {
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+    z-index: 0;
+    animation: pulse 10s infinite;
 }
 
 #frame-2 {
     position: relative;
     padding-top: 60px;
 }
-#frame-2 .emag-title {
+#title-2 {
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
+    left: 0;
+    width: 100%;
 }
 #img-6 {
     width: 100%;
@@ -141,4 +232,88 @@ html, body {
     margin: -360px auto 0;
     max-width: 90vw;
     min-width: 980px;
+}
+
+#img-10, #img-11 {
+    width: 100%;
+}
+
+#img-11 {
+    display: block;
+    margin: -120px auto 0;
+    max-width: 90vw;
+    min-width: 980px;
+    position: relative;
+    z-index: 1;
+}
+#img-11 img {
+    width: 100%;
+}
+
+#img-12 {
+    width: 110%;
+    position: absolute;
+    bottom: -10%;
+    left: -5%;
+    animation: pulse 10s infinite;
+}
+
+.emag-fullwidth {
+    position: relative;
+}
+
+#frame-4 {
+    position: relative;
+}
+#frame-5 {
+    background-color: #e1a563;
+    margin-top: -60px;
+    position: relative;
+    z-index: 1;
+}
+#img-13 {
+    width: 100%;
+}
+#img-14 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+    z-index: 0;
+}
+#img-15 {
+    position: relative;
+    display: block;
+    border-radius: 40px;
+    border: solid 8px white;
+    overflow: hidden;
+    width: 70%;
+    margin-left: auto;
+    z-index: 1;
+}
+#img-16 {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+#frame-6 {
+    position: relative;
+}
+#frame-7 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+#img-18 {
+    width: 100%;
+}
+
+.emag-credit img {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 90px;
 }
