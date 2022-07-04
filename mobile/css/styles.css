@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img, video {
+    vertical-align: middle;
+}
+
+html, body {
+    font-family: 'NotoSerif', serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.emag-cover {
+    position: relative;
+}
+
+.emag-cover video {
+    width: 100%;
+}
+#cover-cloud {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+#cover-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+}
+#cover-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+}
+#cover-3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+}
+#cover-4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+}
+.emag-cover-bottom img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.emag-title {
+    margin-bottom: 30px;
+}
+.emag-title img {
+    width: 100%;
+}
+
+.emag-sapo {
+    margin-bottom: 30px;
+}
+.emag-sapo img {
+    width: 100%;
+}
+
+.emag-content p {
+    margin-bottom: 30px;
+    padding: 0 15px;
+}
+
+.emag-content img {
+    margin-bottom: 30px;
+    width: 100%;
+}
+#title-2 {
+    position: relative;
+    z-index: 1;
+}
+#img-3 {
+    position: relative;
+    margin-top: -60px;
+    z-index: 0;
+}
+
+#img-11 {
+    position: relative;
+    z-index: 1;
+}
+#img-12 {
+    position: relative;
+    margin-top: -60px;
+    z-index: 0;
+}
+
+.emag-credit {
+    padding: 0 15px;
+    margin-bottom: 60px;
+}
+.emag-credit img {
+    width: 100%;
+}
