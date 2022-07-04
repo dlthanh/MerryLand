@@ -10,11 +10,16 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#cover-video").get(0).play()
+        })
+    </script>
 </head>
 <body>
     <div class="emag-wrapper">
         <div class="emag-cover">
-            <video src="images/cover.mp4" autoplay muted></video>
+            <video id="cover-video" src="images/cover.mp4" autoplay muted></video>
             <img id="cover-cloud" src="images/cover-cloud.png" alt="">
             <img id="cover-1" src="images/cover-1.png" alt="">
             <img id="cover-2" src="images/cover-2.png" alt="">
