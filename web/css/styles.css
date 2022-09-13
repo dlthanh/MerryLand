@@ -45,47 +45,12 @@ html, body {
 }
 
 .emag-cover {
-    position: relative;
     overflow: hidden;
 }
 .emag-cover video {
     width: 100%
 }
 .emag-cover img {
-    width: 100%;
-}
-#cover-cloud {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-#cover-1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 30%;
-}
-#cover-2 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 30%;
-}
-#cover-3 {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 30%;
-}
-#cover-4 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 30%;
-}
-
-.emag-cover-bottom img {
     width: 100%;
 }
 
@@ -98,48 +63,21 @@ html, body {
 .emag-fullwidth img {
     width: 100%;
 }
-#title-flower {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    animation: pulse 5s infinite;
-}
-#title-bird-1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    animation: pulse 3s infinite;
-}
-#title-bird-2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    animation: pulse 3s infinite;
-}
-#title-bird-3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    animation: pulse 3s infinite;
-}
 
 .emag-sapo {
     margin-bottom: 60px;
-    margin-top: 60px;
+    margin-top: -10%;
 }
 
 .emag-content p {
     margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
 }
 
 .emag-img-group {
     position: relative;
     margin-bottom: 60px;
-    padding: 60px 0;
 }
 .emag-img-group img:not(#frame-1) {
     position: absolute;
@@ -153,21 +91,16 @@ html, body {
     transform: translate(0, -50%);
     width: 46.5%;
     z-index: 1;
-    border-radius: 40px;
 }
 #img-2 {
     right: 0;
-    top: 60px;
-    width: 52.45%;
+    width: 52.5%;
     z-index: 1;
-    border-radius: 40px;
 }
 #img-3 {
-    bottom: 60px;
-    right: 20px;
-    width: 60%;
-    border-radius: 60px;
-    border: solid 8px white;
+    bottom: 0;
+    right: 2%;
+    width: 61.3%;
     z-index: 1;
 }
 #frame-1-1,
@@ -193,7 +126,7 @@ html, body {
 }
 #img-5 {
     display: block;
-    margin: -260px auto 0;
+    margin: -15% auto 0;
     max-width: 80vw;
     z-index: 1;
     position: relative;
@@ -204,14 +137,14 @@ html, body {
 #frame-add-bg {
     position: absolute;
     width: 100%;
-    bottom: 10%;
+    bottom: 12%;
     z-index: 0;
-    animation: pulse 10s infinite;
 }
 
 #frame-2 {
     position: relative;
-    padding-top: 60px;
+    margin-top: -10%;
+    z-index: 0;
 }
 #title-2 {
     position: absolute;
@@ -229,7 +162,7 @@ html, body {
 
 #img-8 {
     display: block;
-    margin: -360px auto 0;
+    margin: -5% auto 0;
     max-width: 90vw;
     min-width: 980px;
 }
@@ -267,7 +200,7 @@ html, body {
 }
 #frame-5 {
     background-color: #e59e4e;
-    margin-top: -60px;
+    padding-top: 30px;
     position: relative;
     z-index: 1;
 }
@@ -284,8 +217,6 @@ html, body {
 #img-15 {
     position: relative;
     display: block;
-    border-radius: 40px;
-    border: solid 8px white;
     overflow: hidden;
     width: 70%;
     margin-left: auto;
@@ -310,6 +241,13 @@ html, body {
 }
 #img-18 {
     width: 100%;
+}
+
+#img-19, #img-21 {
+    display: block;
+    margin: -15% auto 0;
+    max-width: 90vw;
+    min-width: 980px;
 }
 
 .emag-credit img {
