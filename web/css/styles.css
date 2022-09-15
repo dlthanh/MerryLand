@@ -46,12 +46,27 @@ html, body {
 
 .emag-cover {
     overflow: hidden;
+    position: relative;
+}
+.emag-cover::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
 }
 .emag-cover video {
     width: 100%
 }
+
 .emag-cover img {
     width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .emag-title {
@@ -66,7 +81,8 @@ html, body {
 
 .emag-sapo {
     margin-bottom: 60px;
-    margin-top: -10%;
+    margin-top: -5%;
+    position: relative;
 }
 
 .emag-content p {

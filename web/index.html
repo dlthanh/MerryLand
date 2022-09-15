@@ -6,7 +6,7 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Merry Land Quy Nhơn - Kỳ quan mới của miền nhiệt đới</title>
+    <title>Merryland Quy Nhơn: Trải nghiệm siêu điểm đến trên bán đảo kỳ quan</title>
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -24,9 +24,6 @@
             frame1Displayed: 0,
             coverImagesDisplayed: 0,
             init: function () {
-                this.covers = ["#cover-1", "#cover-2", '#cover-3', '#cover-4']
-                this.frame1 = ['#frame-1-1', "#frame-1-2"]
-                this.coverImagesDisplayed = 0
                 this.initAnimation()
                 this.playVideo()
             },
@@ -37,58 +34,8 @@
                 var video = $("#cover-video").get(0)
                 video.play()
             },
-            isCoverImageShow: function (item) {
-                return item.style.visibility === 'visible' && item.style.animationName !== 'none'
-            },
-            addAnimationToImage: function (item, animation = "pulse", duration = "3s") {
-                setTimeout(function () {
-                    item.style.animationName = animation
-                    item.style.animationDuration = duration
-                    item.style.animationIterationCount = "infinite"
-                }, 1000)
-            },
-            handleCoverImage: function (item, index) {
-                if (this.isCoverImageShow(item)) {
-                    this.coverImagesDisplayed++
-                    this.covers.splice(index, 1)
-                    this.addAnimationToImage(item)
-                }
-            },
-            handleCoverImages: function () {
-                var _ = this
-                var coverCount = _.covers.length
-                var interval = setInterval(function () {
-                    _.covers.forEach(function (item, index) {
-                        _.handleCoverImage($(item)[0], index)
-                    })
-                    if (_.coverImagesDisplayed === coverCount) {
-                        clearInterval(interval)
-                    }
-                }, 100)
-            },
-            handleFrame1Image: function (item, index) {
-                if (this.isCoverImageShow(item)) {
-                    this.frame1Displayed++
-                    this.frame1.splice(index, 1)
-                    this.addAnimationToImage(item, 'pulse', '10s')
-                }
-            },
-            handleFrame1: function () {
-                var _ = this
-                var frameCount = _.frame1.length
-                var interval = setInterval(function () {
-                    _.frame1.forEach(function (item, index) {
-                        _.handleFrame1Image($(item)[0], index)
-                    })
-                    if (_.frame1Displayed === frameCount) {
-                        clearInterval(interval)
-                    }
-                }, 100)
-            },
             start: function () {
                 this.init()
-                this.handleCoverImages()
-                this.handleFrame1()
             }
         }
     </script>
@@ -97,7 +44,8 @@
 <body>
     <div class="emag-wrapper">
         <div class="emag-cover">
-            <img src="images/cover.jpg" alt="">
+            <video id="cover-video" src="images/cover.mp4" controls autoplay loop muted></video>
+            <img src="images/title.png" alt="" class="cover-title">
         </div>
 
         <div class="emag-main">
@@ -127,7 +75,7 @@
                     alt="">
             </div>
 
-            <div class="emag-title w980 wow fadeInUp" data-wow-duration="1s">
+            <div class="emag-title w980 wow zoomIn" data-wow-duration="1s">
                 <img src="images/title-1.png" alt="">
             </div>
 
@@ -149,11 +97,11 @@
 
             <div class="emag-fullwidth mb-30" id="frame-add">
                 <img class="wow fadeIn" data-wow-duration="1s" id="img-4" src="images/img-4.png" alt="">
-                <img class="wow fadeIn" data-wow-duration="1s" id="img-5" src="images/img-5.png" alt="">
+                <img class="wow fadeInUp" data-wow-duration="1s" id="img-5" src="images/img-5.png" alt="">
                 <img id="frame-add-bg" src="images/frame-add-bg.png" alt="">
             </div>
 
-            <div class="emag-title w980 wow fadeInUp" data-wow-duration="1s">
+            <div class="emag-title w980 wow zoomIn" data-wow-duration="1s">
                 <img src="images/title-2.png" alt="">
             </div>
 
@@ -167,11 +115,11 @@
             </div>
 
             <div id="frame-2">
-                <img class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1s" id="img-6" src="images/img-6.jpg"
+                <img class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s" id="img-6" src="images/img-6.jpg"
                     alt="">
             </div>
 
-            <div class="emag-title w980 wow fadeInUp" data-wow-duration="1s">
+            <div class="emag-title w980 wow zoomIn" data-wow-duration="1s">
                 <img src="images/title-3.png" alt="">
             </div>
 
@@ -195,7 +143,7 @@
                 <img src="images/img-5.jpg" alt="">
             </div>
 
-            <div class="emag-title w980 wow fadeInUp" data-wow-duration="1s">
+            <div class="emag-title w980 wow zoomIn" data-wow-duration="1s">
                 <img src="images/title-4.png" alt="">
             </div>
 
@@ -223,7 +171,7 @@
                 <img class="wow fadeIn" data-wow-duration="1s" id="img-8" src="images/img-8.png" alt="">
             </div>
 
-            <div class="emag-title w980 wow fadeInUp" data-wow-duration="1s">
+            <div class="emag-title w980 wow zoomIn" data-wow-duration="1s">
                 <img src="images/title-5.png" alt="">
             </div>
 
@@ -258,7 +206,7 @@
                 <img src="images/img-16.png" alt="" id="img-16">
             </div>
 
-            <div class="emag-title w980 wow fadeInUp" data-wow-duration="1s">
+            <div class="emag-title w980 wow zoomIn" data-wow-duration="1s">
                 <img src="images/title-6.png" alt="">
             </div>
 
@@ -291,7 +239,7 @@
                     Greg Norman.</p>
             </div>
 
-            <div class="emag-title w980 wow fadeInUp" data-wow-duration="1s">
+            <div class="emag-title w980 wow zoomIn" data-wow-duration="1s">
                 <img src="images/title-7.png" alt="">
             </div>
 
@@ -318,7 +266,7 @@
                 <img class="wow fadeIn" data-wow-duration="1s" id="img-21" src="images/img-21.png" alt="">
             </div>
 
-            <div class="emag-title w980 wow fadeInUp" data-wow-duration="1s">
+            <div class="emag-title w980 wow zoomIn" data-wow-duration="1s">
                 <img src="images/title-8.png" alt="">
             </div>
 
