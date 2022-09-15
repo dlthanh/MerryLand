@@ -31,8 +31,24 @@
                 new WOW().init()
             },
             playVideo: function () {
-                var video = $("#cover-video").get(0)
-                video.play()
+                const _this = this
+                var video = $("#cover-video")
+                video[0].play()
+                video.on("playing", function() {
+                    setTimeout(function() {
+                        $(".cover-title").hide()
+                    }, 3000)
+                    _this.addAnimationToImage($(".cover-title").get(0), "zoomOut", "3s", 1)
+                })
+                video.on("ended", function() {
+                    $(".cover-title").show()
+                    _this.addAnimationToImage($(".cover-title").get(0), "zoomIn", "1s", 1)
+                })
+            },
+            addAnimationToImage: function (item, animation = "pulse", duration = "3s", count = "infinite") {
+                item.style.animationName = animation
+                item.style.animationDuration = duration
+                item.style.animationIterationCount = count
             },
             start: function () {
                 this.init()
@@ -44,7 +60,7 @@
 <body>
     <div class="emag-wrapper">
         <div class="emag-cover">
-            <video id="cover-video" src="images/cover.mp4" controls autoplay loop muted></video>
+            <video id="cover-video" src="images/cover.mp4" controls autoplay muted></video>
             <img src="images/title.png" alt="" class="cover-title">
         </div>
 
