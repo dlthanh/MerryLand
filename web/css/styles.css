@@ -48,7 +48,7 @@ html, body {
     overflow: hidden;
     position: relative;
 }
-/* .emag-cover.show::before {
+.emag-cover::before {
     content: '';
     display: block;
     position: absolute;
@@ -56,9 +56,12 @@ html, body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .3);
-    transition: all .3s;
-} */
+    background-color: rgba(0, 0, 0, .5);
+    transition: all 1s;
+}
+.emag-cover.hide::before {
+    background-color: rgba(0, 0, 0, 0);
+}
 .emag-cover video {
     width: 100%
 }

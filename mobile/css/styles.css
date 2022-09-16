@@ -16,7 +16,7 @@ html, body {
 .emag-cover {
     position: relative;
 }
-/* .emag-cover::before {
+.emag-cover::before {
     content: '';
     display: block;
     position: absolute;
@@ -25,7 +25,11 @@ html, body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, .5);
-} */
+    transition: all 1s;
+}
+.emag-cover.hide::before {
+    background-color: rgba(0, 0, 0, 0);
+}
 
 .emag-cover img {
     width: 100%;

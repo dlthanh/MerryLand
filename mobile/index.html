@@ -24,11 +24,15 @@
             video[0].play()
             video.on("playing", function() {
                 setTimeout(function() {
+                    $(".emag-cover").addClass("hide")
+                    addAnimationToImage($(".cover-title").get(0), "zoomOut", "3s", 1)
+                    setTimeout(function() {
                         $(".cover-title").hide()
                     }, 3000)
-                addAnimationToImage($(".cover-title").get(0), "zoomOut", "3s", 1)
+                }, 3000)
             })
             video.on("ended", function() {
+                $(".emag-cover").removeClass("hide")
                 $(".cover-title").show()
                 addAnimationToImage($(".cover-title").get(0), "zoomIn", "1s", 1)
             })
